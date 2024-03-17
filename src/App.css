@@ -1,38 +1,121 @@
-.App {
+header{
+  background-color:	#D65DB1;
+  
+}
+.header-nav a{
+text-decoration: none;
+color: 	#FFC75F;
+}
+.container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.header-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+.header-nav a {
+  margin-right: 15px;
+}
+.my-img{
+  width: 30%;
+ 
+}
+.block1{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 100px;
+margin-top: 80px;
+
+}
+.block{
+  text-align:center ;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+.text1{
+  text-align: center;
+  display: block;
+}
+.container1{
+  padding-left: 500px;
+  padding-right: 500px;
+}
+.p1{
+  text-align: center;
+  font-size: 20px;
+}
+
+.block3{
+  display: flex;
+  justify-content: space-between;
   text-align: center;
 }
+.img-posts{
+  
+}
+.p4{
+  text-align: center;
+  font-size: 20px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+}
+.img1{
+  width: 50%;
+}
+.img{
+ width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.block4{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
 }
+.div1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+}
+.div2 {
+  display: flex;
+ align-items: center;
+ text-align: center;
+ gap: 15px;
+}
+.div2 img{
+  width: 50px;
+  
+}
+.posts{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-bottom: 25px;
+gap:30px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.post{
+  width: 30%;
+}
+.posts-title{
+  padding-top: 20px;
+}
+.new-post-add{
+  padding-top: 25px;
+}
+.new-post{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: start;
+  gap: 15px;
+ 
 }
