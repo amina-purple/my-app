@@ -1,25 +1,41 @@
-import { React, useRef } from "react";
+import { React, useState } from "react";
 
 
 function NewPost(props) {
-
-    let addtext = useRef(null)
-    let addtitle = useRef(null)
-
+     
+    let data = props.data.posts
+    const [posts, setPosts] = useState(data)
+    const [text, setText] = useState('')
+    const [postTitle, setTitle] = useState('')
+  
     const addNewPost = () => {
-    
-        let text = addtext.current.value
-        alert(text)
-        let title = addtitle.current.value
-        alert(title)  
+      const newPost = {
+        id: Date.now(),
+        text,
+        postTitle
+      }
+      setPosts([...posts, newPost])
+      setText('')
+      setTitle('')
     }
 
-
+ 
+    
+ 
     return (
         <div className="new-post">
             <p className="new-post-add">New post:</p>
-            <textarea ref={addtext}></textarea>
-            <input type="text" ref={addtitle} />
+            <textarea value={text} 
+                onChange={e => setText(e.target.value)}
+                type="text"
+                placeholder="Описание поста" rows={4} cols={60}/>
+            <input value={postTitle}
+                 type="text" 
+                 onChange={e => setTitle(e.target.value)} 
+                 placeholder="Название поста" 
+                 />
+               
+                 
             <button type="button" onClick={addNewPost} className="send">Send</button>
         </div>
     );
