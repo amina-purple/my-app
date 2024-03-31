@@ -17,10 +17,15 @@ const Posts = (props) => {
         setText('');
     }
 
+      const deletePost = (ide) => {
+           setPosts(posts.filter(p => p.id != ide))
+      }
+
     return (
         <div>
             <form>
                 <div className="form-post">
+                    <p className="new-post-add">New post:</p>
                     <div className="form-input"> 
                         <input 
                             value={postTitle}
@@ -45,7 +50,7 @@ const Posts = (props) => {
             <p className="posts-title">Posts:</p>
             <div className="posts">
                 {posts.map(post => (
-                    <Post key={post.id} postTitle={post.postTitle} text={post.text} />
+                    <Post key={post.id} postTitle={post.postTitle} text={post.text} deletePost={deletePost} />
                 ))}
             </div>
         </div>

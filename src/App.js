@@ -4,6 +4,8 @@ import Header from './Header';
 import Profile from './Profile';
 import Footer from './Footer';
 import Main from './Main';
+import Page from './Page';
+
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -14,6 +16,7 @@ function App(props) {
       <div>
          <Header />
         <Routes>
+        <Route path='/' element={<Page/>}/>
           <Route path='/main/*' element={<Main data={props.data.PostPage}/>}/>
           <Route path='/profile/*' element={<Profile/>}/>
        

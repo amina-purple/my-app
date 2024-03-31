@@ -58,9 +58,7 @@ margin-top: 80px;
   justify-content: space-between;
   text-align: center;
 }
-.img-trash{
 
-}
 .p4{
   text-align: center;
   font-size: 20px;
@@ -112,10 +110,38 @@ gap:30px;
 .new-post-add{
   padding-top: 25px;
 }
-.new-post{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 15px;
- 
+.form-input{
+  padding-bottom: 15px;
 }
+.button-img{
+  border: none ;
+  background: none ;
+  padding: 0;
+}
+.container2{
+  padding-left: 400px;
+  padding-right: 400px;
+}
+.cl-3{
+  text-align: center;
+}
+.cl-2{
+  padding-top: 25px;
+}
+
+.cl-5{
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+.cl-6{
+  width: 40%;
+}
+
+
+
+
+
+
+
+
