@@ -5,8 +5,8 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header-inner">
-          <img src="img/loGO.png" alt="logo"/>
-         
+        
+      <a href="/">     <img src="img/loGO.png" alt="logo"/></a>
           <Nav/>
         </div>
       </div>

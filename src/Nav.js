@@ -5,7 +5,7 @@ const Nav = () => {
     <nav className=" header-nav"> 
       <NavLink to="/main">Main</NavLink>
       <NavLink to="/profile">Profile</NavLink>
-        <img  src="img/pro-img.png"alt="pro-img"/>
+        <img className="img-none"  src="img/pro-img.png"alt="pro-img"/>
       
     </nav>
   ) 

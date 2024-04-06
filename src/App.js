@@ -21,6 +21,7 @@ function App(props) {
           <Route path='/profile/*' element={<Profile/>}/>
        
         </Routes>
+        <hr/>
          <Footer/>
      </div>
     </BrowserRouter>

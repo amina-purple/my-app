@@ -33,7 +33,7 @@ const Profile = () => {
            </div>
            <div>
               <img className="img1"  src="img/image-2.png" alt="1"/>
-              <p>Магазин мак...</p>
+              <p>Магазин м...</p>
            </div>
            <div>
                <img className="img1"  src="img/image-3.png" alt="1"/>
